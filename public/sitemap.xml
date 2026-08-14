@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/en-us/</loc>
+  </url>
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/en-us/bybit-login.html</loc>
+  </url>
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/en-us/bybit-exchange.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/fr/</loc>
+  </url>
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/fr/bybit-login.html</loc>
+  </url>
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/fr/bybit-exchange.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/ja/</loc>
+  </url>
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/ja/bybit-login.html</loc>
+  </url>
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/ja/bybit-exchange.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/ko/</loc>
+  </url>
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/ko/bybit-login.html</loc>
+  </url>
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/ko/bybit-exchange.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/ru/</loc>
+  </url>
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/ru/bybit-login.html</loc>
+  </url>
+  <url>
+    <loc>https://bybit-global-delta.vercel.app/ru/bybit-exchange.html</loc>
+  </url>
+
+</urlset>
