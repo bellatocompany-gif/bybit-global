@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
@@ -7,17 +6,296 @@
 
   <title>Bybit Exchange | Exchange Information and Guide</title>
 
-<meta
-name="description"
-content="Information about Bybit Exchange and important considerations when using digital asset trading services."
-
->
+  <meta
+    name="description"
+    content="Information about Bybit Exchange and important considerations when using digital asset trading services."
+  >
 
   <meta name="robots" content="index, follow">
 
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #171717;
+      background: #f7f8fa;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    .header {
+      background: #111111;
+      color: #ffffff;
+      border-bottom: 1px solid #292929;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      color: #dddddd;
+      font-size: 15px;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    /* HERO */
+
+    .hero {
+      background: linear-gradient(135deg, #111111 0%, #242424 100%);
+      color: #ffffff;
+      padding: 90px 0 100px;
+    }
+
+    .hero h1 {
+      max-width: 800px;
+      font-size: clamp(40px, 7vw, 64px);
+      line-height: 1.05;
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: #d2d2d2;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    /* BUTTON */
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 13px 22px;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #111111;
+      font-size: 15px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .button:hover {
+      background: #eaeaea;
+      transform: translateY(-2px);
+    }
+
+    /* SECTIONS */
+
+    section:not(.hero) {
+      padding: 75px 0;
+      background: #ffffff;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    section:nth-of-type(even) {
+      background: #f7f8fa;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 1.2;
+      margin-bottom: 22px;
+      color: #151515;
+    }
+
+    h3 {
+      font-size: 21px;
+      margin-bottom: 12px;
+      color: #151515;
+    }
+
+    p {
+      max-width: 850px;
+      color: #555555;
+      font-size: 17px;
+      margin-bottom: 18px;
+    }
+
+    /* CARDS */
+
+    .card {
+      max-width: 850px;
+      margin-top: 20px;
+      padding: 26px 28px;
+      background: #ffffff;
+      border: 1px solid #e2e2e2;
+      border-radius: 10px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    }
+
+    .card p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+
+    /* LINKS */
+
+    .page-link {
+      color: #111111;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .page-link:hover {
+      color: #555555;
+    }
+
+    .related {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .related a {
+      display: inline-block;
+      width: fit-content;
+      color: #111111;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .related a:hover {
+      color: #555555;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #111111;
+      color: #ffffff;
+      padding: 45px 0;
+    }
+
+    footer strong {
+      font-size: 20px;
+    }
+
+    footer p {
+      color: #aaaaaa;
+      margin-top: 12px;
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 18px 0;
+        gap: 14px;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      .hero {
+        padding: 65px 0 70px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section:not(.hero) {
+        padding: 55px 0;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -25,216 +303,222 @@ content="Information about Bybit Exchange and important considerations when usin
   <header class="header">
     <div class="container nav">
 
-```
-  <a class="logo" href="/en-us/">Bybit</a>
+      <a class="logo" href="/en-us/">Bybit</a>
 
-  <nav>
-    <a href="/en-us/">Bybit</a>
-    <a href="/en-us/bybit-login.html">Bybit Login</a>
-    <a href="/en-us/bybit-exchange.html">Bybit Exchange</a>
-  </nav>
+      <nav>
+        <a href="/en-us/">Home</a>
 
-</div>
-```
+        <a href="/en-us/bybit-exchange.html">
+          Bybit Exchange
+        </a>
 
+        <a href="/en-us/bybit-login.html">
+          Bybit Login
+        </a>
+
+        <a
+          href="https://www.bybit.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Official Bybit
+        </a>
+      </nav>
+
+    </div>
   </header>
 
   <main>
 
-```
-<section class="hero">
-  <div class="container">
+    <section class="hero">
+      <div class="container">
 
-    <h1>Bybit Exchange</h1>
+        <h1>Bybit Exchange</h1>
 
-    <p>
-      Find basic information about Bybit Exchange and digital
-      asset trading services.
-    </p>
+        <p>
+          Find basic information about Bybit Exchange and digital
+          asset trading services.
+        </p>
 
-    <p>
-      Before using account, login or trading services, review
-      the latest official information.
-    </p>
+        <p>
+          Before using account, login or trading services, review
+          the latest official information.
+        </p>
 
-    <a
-      class="button"
-      href="https://www.bybit.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Visit the official Bybit website
-    </a>
+        <a
+          class="button"
+          href="https://www.bybit.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit the official Bybit website
+        </a>
 
-  </div>
-</section>
+      </div>
+    </section>
 
-<section>
-  <div class="container">
+    <section>
+      <div class="container">
 
-    <h2>What is Bybit Exchange?</h2>
+        <h2>What is Bybit Exchange?</h2>
 
-    <p>
-      Bybit is a global platform providing services related to
-      digital assets and cryptocurrency trading.
-    </p>
+        <p>
+          Bybit is a global platform providing services related to
+          digital assets and cryptocurrency trading.
+        </p>
 
-    <p>
-      Available services, products and features may vary
-      depending on location, account status and applicable
-      regulations.
-    </p>
+        <p>
+          Available services, products and features may vary
+          depending on location, account status and applicable
+          regulations.
+        </p>
 
-    <p>
-      Check the official Bybit website for the latest information
-      about service availability and applicable conditions.
-    </p>
+        <p>
+          Check the official Bybit website for the latest information
+          about service availability and applicable conditions.
+        </p>
 
-  </div>
-</section>
+      </div>
+    </section>
 
-<section>
-  <div class="container">
+    <section>
+      <div class="container">
 
-    <h2>Things to Check When Using Bybit Exchange</h2>
+        <h2>Things to Check When Using Bybit Exchange</h2>
 
-    <div class="card">
+        <div class="card">
 
-      <h3>Account Information</h3>
+          <h3>Account Information</h3>
 
-      <p>
-        Before creating or using an account, review the official
-        website for current account requirements and applicable
-        terms.
-      </p>
+          <p>
+            Before creating or using an account, review the official
+            website for current account requirements and applicable
+            terms.
+          </p>
 
-    </div>
+        </div>
 
-    <div class="card">
+        <div class="card">
 
-      <h3>Login Security</h3>
+          <h3>Login Security</h3>
 
-      <p>
-        Do not share login information with other people and
-        verify that you are using the official website before
-        accessing your account.
-      </p>
+          <p>
+            Do not share login information with other people and
+            verify that you are using the official website before
+            accessing your account.
+          </p>
 
-    </div>
+        </div>
 
-    <div class="card">
+        <div class="card">
 
-      <h3>Service Availability</h3>
+          <h3>Service Availability</h3>
 
-      <p>
-        Certain services may not be available in every location.
-        Check the latest official information for your region.
-      </p>
+          <p>
+            Certain services may not be available in every location.
+            Check the latest official information for your region.
+          </p>
 
-    </div>
+        </div>
 
-  </div>
-</section>
+      </div>
+    </section>
 
-<section>
-  <div class="container">
+    <section>
+      <div class="container">
 
-    <h2>Safe Website Use</h2>
+        <h2>Safe Website Use</h2>
 
-    <p>
-      When using websites related to Bybit, carefully check the
-      website address and avoid logging in through suspicious
-      links or unexpected messages.
-    </p>
+        <p>
+          When using websites related to Bybit, carefully check the
+          website address and avoid logging in through suspicious
+          links or unexpected messages.
+        </p>
 
-    <p>
-      Do not share passwords or authentication information with
-      others and use available security features to help protect
-      your account.
-    </p>
+        <p>
+          Do not share passwords or authentication information with
+          others and use available security features to help protect
+          your account.
+        </p>
 
-  </div>
-</section>
+      </div>
+    </section>
 
-<section>
-  <div class="container">
+    <section>
+      <div class="container">
 
-    <h2>Official Bybit Information</h2>
+        <h2>Official Bybit Information</h2>
 
-    <p>
-      For the latest service information and account guidance,
-      visit the official Bybit website directly.
-    </p>
+        <p>
+          For the latest service information and account guidance,
+          visit the official Bybit website directly.
+        </p>
 
-    <p>
-      <a
-        href="https://www.bybit.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Official Bybit website
-      </a>
-    </p>
+        <p>
+          <a
+            class="page-link"
+            href="https://www.bybit.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Official Bybit website
+          </a>
+        </p>
 
-  </div>
-</section>
+      </div>
+    </section>
 
-<section>
-  <div class="container">
+    <section>
+      <div class="container">
 
-    <h2>Related Pages</h2>
+        <h2>Related Pages</h2>
 
-    <p>
-      <a href="/en-us/">
-        Bybit information
-      </a>
-    </p>
+        <div class="related">
 
-    <p>
-      <a href="/en-us/bybit-login.html">
-        Bybit Login information
-      </a>
-    </p>
+          <a href="/en-us/">
+            Bybit information
+          </a>
 
-    <p>
-      <a href="/en-us/bybit-exchange.html">
-        Bybit Exchange information
-      </a>
-    </p>
+          <a href="/en-us/bybit-login.html">
+            Bybit Login information
+          </a>
 
-  </div>
-</section>
-```
+          <a href="/en-us/bybit-exchange.html">
+            Bybit Exchange information
+          </a>
+
+        </div>
+
+      </div>
+    </section>
 
   </main>
 
   <footer>
     <div class="container">
 
-```
-  <strong>Bybit</strong>
+      <strong>Bybit</strong>
 
-  <p>
-    This is an independent informational website about Bybit.
-  </p>
+      <p>
+        This is an independent informational website about Bybit.
+      </p>
 
-  <p>
-    It is not affiliated with or operated by Bybit.
-  </p>
+      <p>
+        It is not affiliated with or operated by Bybit.
+      </p>
 
-  <p>
-    Official website:
-    <a
-      href="https://www.bybit.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      bybit.com
-    </a>
-  </p>
+      <p>
+        Official website:
+        <a
+          href="https://www.bybit.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          bybit.com
+        </a>
+      </p>
 
-</div>
-
+    </div>
   </footer>
 
 </body>
